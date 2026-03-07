@@ -1,26 +1,133 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy: #0a192f;
+  --color-navy-light: #112240;
+  --color-navy-lighter: #233554;
+  --color-slate-light: #a8b2d1;
+  --color-slate: #8892b0;
+  --color-light-slate: #ccd6f6;
+  --color-lightest-slate: #e6f1ff;
+  --color-green: #64ffda;
+  --color-green-tint: rgba(100, 255, 218, 0.1);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-sora);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-navy);
+  color: var(--color-slate);
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-feature-settings: "ss03", "cv02", "cv11";
+}
+
+::selection {
+  background-color: var(--color-navy-lighter);
+  color: var(--color-lightest-slate);
+}
+
+/* Print styles for resume PDF export */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 14mm;
+  }
+
+  body {
+    background: white !important;
+    color: #1a1a1a !important;
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Resume card — remove dark styles */
+  .resume-card {
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Typography overrides */
+  .resume-card h1 {
+    color: #1a1a1a !important;
+    font-size: 28px !important;
+  }
+
+  .resume-card h2 {
+    color: #2563eb !important;
+    font-size: 11px !important;
+    margin-top: 16px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .resume-card h3 {
+    color: #1a1a1a !important;
+  }
+
+  .resume-card header p,
+  .resume-card header a {
+    color: #374151 !important;
+  }
+
+  .resume-card header {
+    border-color: #e5e7eb !important;
+    padding-bottom: 12px !important;
+  }
+
+  /* Experience entries */
+  .resume-card .text-lightest-slate {
+    color: #1a1a1a !important;
+  }
+
+  .resume-card .text-light-slate {
+    color: #1a1a1a !important;
+  }
+
+  .resume-card .text-slate {
+    color: #4b5563 !important;
+  }
+
+  .resume-card .text-green {
+    color: #2563eb !important;
+  }
+
+  .resume-card .bg-slate {
+    background-color: #4b5563 !important;
+  }
+
+  /* Spacing adjustments */
+  .resume-card .space-y-7 > * + * {
+    margin-top: 12px !important;
+  }
+
+  .resume-card .space-y-5 > * + * {
+    margin-top: 8px !important;
+  }
+
+  .resume-card .space-y-1\.5 > * + * {
+    margin-top: 2px !important;
+  }
+
+  /* Two-column gap */
+  .resume-card .lg\:gap-14 {
+    gap: 24px !important;
+  }
+
+  .resume-card .mt-10 {
+    margin-top: 16px !important;
+  }
 }
