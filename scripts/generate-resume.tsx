@@ -267,14 +267,14 @@ const Resume = () => (
           <Text style={s.subheading}>Singapore Airlines</Text>
           <Text style={s.bodyText}>Enterprise-level airline website delivering seamless booking and travel experience for millions of users</Text>
 
-          <Text style={s.subheading}>Hilton Asia Pacific</Text>
-          <Text style={s.bodyText}>Corporate and reservation platform handling hotel bookings across the Asia Pacific region</Text>
+          <Text style={s.subheading}>EmergenSync (Android / WIP)</Text>
+          <Text style={s.bodyText}>Life360 clone made with React Native and Firebase</Text>
 
-          <Text style={s.subheading}>EIEV Registration System</Text>
+          <Text style={s.subheading}>EIEV Event System</Text>
           <Text style={s.bodyText}>End-to-end event management with web, mobile, and on-site kiosk integration for equestrian events in the UAE</Text>
 
           <Text style={s.subheading}>Expenses App</Text>
-          <Text style={s.bodyText}>Personal finance tracker built with Next.js and Supabase, live at expenses.leedalmogbel.com</Text>
+          <Text style={s.bodyText}>Personal finance tracker built with Next.js, React Native and Supabase, live at expenses.leedalmogbel.com</Text>
 
           <Text style={{ ...s.sectionTitle, marginTop: 8 }}>EDUCATION</Text>
 
