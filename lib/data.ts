@@ -114,7 +114,7 @@ export const featuredProjects: Project[] = [
     role: "Fullstack",
   },
   {
-    title: "EIEV Registration | Web | Stables | Horses",
+    title: "EIEV Registration Mobile | Web | Stables | Horses",
     description:
       "Developed an end-to-end event management and registration system for the Emirates International Endurance Village, handling rider registrations, event scheduling, and third-party API integrations; built the platform using the MERN stack and later migrated it to PHP (Laravel), while also developing a web platform for Arabian horse listings, creating custom APIs and internal tools, building a mobile application, integrating real-time data synchronization across web, mobile, and on-site kiosks, and assisting in debugging and maintaining backend services to improve system stability and performance.",
     tags: ["Laravel", "Node.js", "React"],

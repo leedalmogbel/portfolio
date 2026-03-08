@@ -14,9 +14,9 @@ export default function About() {
             <span className="font-medium text-lightest-slate hover:text-green transition-colors">ABS-CBN</span>,{" "}
             <span className="font-medium text-lightest-slate hover:text-green transition-colors">Globe Telecom</span>,{" "}
             <span className="font-medium text-lightest-slate hover:text-green transition-colors">
-              Singapore Airlines
+              Singapore Airlines,{" "}
             </span>
-            <span className="font-medium text-lightest-slate hover:text-green transition-colors">Terumo</span>,{" "}
+            <span className="font-medium text-lightest-slate hover:text-green transition-colors">Terumo</span>
             , and{" "}
             <span className="font-medium text-lightest-slate hover:text-green transition-colors">
               Johnson &amp; Johnson
