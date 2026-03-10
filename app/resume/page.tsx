@@ -245,9 +245,9 @@ export default function ResumePage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-sm font-semibold text-lightest-slate">Expenses App</h3>
+                <h3 className="text-sm font-semibold text-lightest-slate">Doshmate</h3>
                 <p className="mt-1 text-sm leading-relaxed text-slate">
-                  Personal finance tracker built with Next.js and Supabase, live at expenses.leedalmogbel.com
+                  Personal finance tracker built with Next.js and Supabase, live at doshmate.leedalmogbel.com
                 </p>
               </div>
             </div>

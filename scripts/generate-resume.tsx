@@ -273,8 +273,8 @@ const Resume = () => (
           <Text style={s.subheading}>EIEV Event System</Text>
           <Text style={s.bodyText}>End-to-end event management with web, mobile, and on-site kiosk integration for equestrian events in the UAE</Text>
 
-          <Text style={s.subheading}>Expenses App</Text>
-          <Text style={s.bodyText}>Personal finance tracker built with Next.js, React Native and Supabase, live at expenses.leedalmogbel.com</Text>
+          <Text style={s.subheading}>Doshmate</Text>
+          <Text style={s.bodyText}>Personal finance tracker built with Next.js, React Native and Supabase, live at doshmate.leedalmogbel.com</Text>
 
           <Text style={{ ...s.sectionTitle, marginTop: 8 }}>EDUCATION</Text>
 

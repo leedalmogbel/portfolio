@@ -129,17 +129,17 @@ export const featuredProjects: Project[] = [
     role: "Fullstack",
   },
   {
-    title: "Expenses",
+    title: "Doshmate",
     description:
-      "Personal finance tracking application with real-time expense categorization, analytics dashboards, and budget management. Live at expenses.leedalmogbel.com.",
+      "Personal finance tracking application with real-time expense categorization, analytics dashboards, and budget management. Live at doshmate.leedalmogbel.com.",
     tags: ["Next.js", "Supabase", "TypeScript"],
     role: "Fullstack",
-    link: "http://expenses.leedalmogbel.com",
+    link: "http://doshmate.leedalmogbel.com",
   },
 ];
 
 export const archiveProjects: ArchiveProject[] = [
-  { year: "2024", title: "Expenses", role: "Fullstack", tags: ["Next.js", "Supabase"], link: "https://expenses.leedalmogbel.com" },
+  { year: "2024", title: "Doshmate", role: "Fullstack", tags: ["Next.js", "Supabase"], link: "https://doshmate.leedalmogbel.com" },
   { year: "2022", title: "EIEV Web", role: "Fullstack", tags: ["Laravel", "Node.js", "React", "WordPress"], link: "https://website.eiev-app.ae/en" },
   { year: "2022", title: "EIEV Stables", role: "Fullstack", tags: ["Laravel", "Node.js", "React"], link: "https://registration.eiev-app.ae/login" },
   { year: "2022", title: "EIEV Horses", role: "Fullstack", tags: ["Laravel", "Node.js", "React"], link: "https://registration.eiev-app.ae/login" },
