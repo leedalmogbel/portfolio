@@ -12,7 +12,7 @@ const s = StyleSheet.create({
     fontFamily: "Helvetica",
     fontSize: 8,
     color: BLACK,
-    paddingTop: 30,
+    paddingTop: 16,
     paddingBottom: 20,
     paddingHorizontal: 36,
     lineHeight: 1.35,
@@ -21,35 +21,33 @@ const s = StyleSheet.create({
   headerRow: {
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "flex-start",
   },
   headerLeft: {
     width: "55%",
   },
   name: {
-    fontSize: 24,
+    fontSize: 28,
     fontFamily: "Helvetica-Bold",
     color: DARK,
-    marginBottom: 6,
+    marginBottom: 24,
   },
   subtitle: {
-    fontSize: 9,
+    fontSize: 8.5,
     color: GRAY,
     lineHeight: 1.4,
-    marginTop: 2,
-    maxWidth: "55%",
   },
   contactBlock: {
     alignItems: "flex-end",
-    justifyContent: "flex-start",
-    paddingTop: 4,
+    justifyContent: "center",
   },
   contactText: {
-    fontSize: 8,
+    fontSize: 7.5,
     color: GRAY,
     marginBottom: 2,
   },
   contactLink: {
-    fontSize: 8,
+    fontSize: 7.5,
     color: GRAY,
     textDecoration: "none",
     marginBottom: 2,
@@ -57,8 +55,8 @@ const s = StyleSheet.create({
   divider: {
     borderBottomWidth: 2,
     borderBottomColor: BLUE,
-    marginTop: 10,
-    marginBottom: 10,
+    marginTop: 4,
+    marginBottom: 8,
   },
   // Columns
   columns: {
@@ -213,18 +211,18 @@ const Resume = () => (
       <View style={s.headerRow}>
         <View style={s.headerLeft}>
           <Text style={s.name}>Waleed Almogbel</Text>
+          <Text style={s.subtitle}>
+            Experienced full-stack developer with a focus on building reliable, scalable web & mobile applications
+          </Text>
         </View>
         <View style={s.contactBlock}>
           <Link src="mailto:leedalmogbel@gmail.com" style={s.contactLink}>leedalmogbel@gmail.com</Link>
           <Text style={s.contactText}>+639155160537</Text>
           <Link src="https://github.com/leedalmogbel" style={s.contactLink}>github.com/leedalmogbel</Link>
           <Link src="https://linkedin.com/in/leed-almogbel-645a2a52" style={s.contactLink}>linkedin.com/in/leed-almogbel</Link>
+          <Link src="https://leedalmogbel.com" style={s.contactLink}>leedalmogbel.com</Link>
         </View>
       </View>
-      {/* Subtitle - separate block below name */}
-      <Text style={s.subtitle}>
-        Experienced full-stack developer with a focus on building reliable, scalable web & mobile applications
-      </Text>
 
       <View style={s.divider} />
 
